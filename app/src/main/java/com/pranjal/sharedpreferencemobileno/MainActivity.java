@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("NumberFile", MODE_PRIVATE);
         text = sharedPreferences.getString("Mobile", "");
         text = text.replace(",", "\n");
+        Toast.makeText(this,"Show All",Toast.LENGTH_SHORT).show();
         mTextResult.setText(text);
 
     }
